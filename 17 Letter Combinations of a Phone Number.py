@@ -15,6 +15,4 @@ class Solution:
             self.l.append(s)
         else:
             for i in map_[digits[ind]]:
-                s=s+i
-                self.bk(digits,ind+1,map_,s)
-                s=s[:-1]
+                self.bk(digits,ind+1,map_,s+i)
